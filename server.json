@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.zen-mode/zenmode",
+  "name": "io.github.zenmode87/zenmode",
   "title": "ZenMode",
   "description": "Read LinkedIn outreach campaigns, contacts and replies, and manage campaign leads and targeting.",
   "repository": {
