@@ -1,0 +1,13 @@
+{
+  "name": "zenmode",
+  "version": "1.0.0",
+  "description": "Connect Grok Build to your ZenMode account through ZenMode's hosted MCP server. Read LinkedIn outreach campaigns, contacts and conversation history, add or remove leads, pause or exclude a contact, and change campaign targeting. Read only unless you choose Read and change. No tool sends a LinkedIn message or connection request. Sign in to ZenMode on first connect. Needs a ZenMode plan (Practitioner and above).",
+  "author": {
+    "name": "ZenMode",
+    "url": "https://www.zen-mode.io"
+  },
+  "homepage": "https://www.zen-mode.io/integrations/mcp",
+  "repository": "https://github.com/zenmode87/zenmode-mcp",
+  "license": "CC-BY-4.0",
+  "keywords": ["zenmode", "zenmode mcp", "zenmode linkedin outreach", "zenmode campaigns"]
+}

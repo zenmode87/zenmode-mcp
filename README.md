@@ -73,8 +73,9 @@ Run `claude mcp list` to check it connected.
 
 ### ChatGPT
 
-Add ZenMode as a custom MCP connector using the server address above and sign in to ZenMode when asked.
-A tested step-by-step guide will be added here once it has been verified.
+Add ZenMode as a custom MCP server in ChatGPT, approve it on a ZenMode page, and keep the scopes on read only
+unless you want ChatGPT to make changes. Step by step, from a real run on a Plus account:
+https://www.zen-mode.io/integrations/chatgpt. Which ChatGPT plans can add a custom MCP server is up to OpenAI.
 
 ### Cursor
 
@@ -130,6 +131,11 @@ gemini mcp list
 
 Create an API key in the ZenMode dashboard at https://www.zen-mode.io/dashboard/api. Revoking the key ends the
 connection.
+
+### Grok Build
+
+This repository is also a Grok Build plugin: `.grok-plugin/plugin.json` and `.mcp.json` point Grok Build at the
+same server address. Sign in to ZenMode when it first connects.
 
 ## Example prompts
 

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "zenmode": {
+      "type": "http",
+      "url": "https://www.zen-mode.io/api/mcp"
+    }
+  }
+}
