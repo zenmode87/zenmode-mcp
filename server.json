@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.zen-mode/zenmode",
+  "title": "ZenMode",
+  "description": "Read LinkedIn outreach campaigns, contacts and replies, and manage campaign leads and targeting.",
+  "repository": {
+    "url": "https://github.com/zenmode87/zenmode-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://www.zen-mode.io/integrations/claude",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.zen-mode.io/api/mcp"
+    }
+  ]
+}
