@@ -1,0 +1,33 @@
+{
+  "name": "zenmode",
+  "description": "Connect an AI assistant to your ZenMode account: read campaigns, contacts and replies, add or remove leads, and adjust targeting. Practitioner plan and above.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ZenMode",
+    "email": "hello@zen-mode.io"
+  },
+  "homepage": "https://www.zen-mode.io/integrations/cursor",
+  "repository": "https://github.com/zenmode87/zenmode-mcp",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "zenmode",
+    "linkedin outreach",
+    "campaigns",
+    "crm",
+    "mcp"
+  ],
+  "logo": "assets/logo.png",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "ZENMODE_API_KEY": {
+        "type": "string",
+        "title": "ZenMode API key",
+        "description": "Create one in the ZenMode dashboard under MCP / API: https://www.zen-mode.io/dashboard/api. Practitioner plan and above."
+      }
+    },
+    "required": [
+      "ZENMODE_API_KEY"
+    ]
+  }
+}

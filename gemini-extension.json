@@ -1,0 +1,11 @@
+{
+  "name": "zenmode",
+  "version": "1.0.0",
+  "description": "Connect an AI assistant to your ZenMode account: read campaigns, contacts and replies, add or remove leads, and adjust targeting. Practitioner plan and above.",
+  "mcpServers": {
+    "zenmode": {
+      "httpUrl": "https://www.zen-mode.io/api/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

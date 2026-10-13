@@ -11,6 +11,7 @@ It works with Claude, ChatGPT and other MCP clients.
 - **Sign-in:** approve the connection in your client (OAuth), or use a ZenMode API key as a Bearer token
 - **Plan:** Practitioner and above. The MCP server and the REST API are not on Novice.
 - **Contact:** hello@zen-mode.io
+- **Official MCP Registry:** `io.zen-mode/zenmode`
 
 This repository holds documentation only. The server runs at the address above and its source is not published here.
 
@@ -79,7 +80,8 @@ https://www.zen-mode.io/integrations/chatgpt. Which ChatGPT plans can add a cust
 
 ### Cursor
 
-Add this to `~/.cursor/mcp.json`:
+[Add ZenMode to Cursor](https://cursor.com/install-mcp?name=zenmode&config=eyJ1cmwiOiJodHRwczovL3d3dy56ZW4tbW9kZS5pby9hcGkvbWNwIiwiaGVhZGVycyI6eyJBdXRob3JpemF0aW9uIjoiQmVhcmVyICR7ZW52OlpFTk1PREVfQVBJX0tFWX0ifX0%3D) (one-click install; it reads your key from the `ZENMODE_API_KEY`
+environment variable). Or add this to `~/.cursor/mcp.json`:
 
 ```json
 {
@@ -123,6 +125,14 @@ Add this to your user `mcp.json`. VS Code asks for the key and keeps it out of t
 ```
 
 ### Gemini CLI
+
+Install the extension from this repository. It adds the server; Gemini CLI then asks you to sign in to ZenMode:
+
+```bash
+gemini extensions install https://github.com/zenmode87/zenmode-mcp
+```
+
+Or add the server yourself with an API key:
 
 ```bash
 gemini mcp add --scope user --transport http -H "Authorization: Bearer YOUR_ZENMODE_API_KEY" zenmode https://www.zen-mode.io/api/mcp

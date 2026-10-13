@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "zenmode": {
+      "url": "https://www.zen-mode.io/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ZENMODE_API_KEY}"
+      }
+    }
+  }
+}
