@@ -17,7 +17,7 @@ This repository holds documentation only. The server runs at the address above a
 
 ## What it can do
 
-Fifteen tools. Everything is scoped to the ZenMode account you sign in with.
+Twenty-two tools. Everything is scoped to the ZenMode account you sign in with.
 
 **Read**
 
@@ -44,9 +44,22 @@ Fifteen tools. Everything is scoped to the ZenMode account you sign in with.
 | `set_contact_outreach_state` | pause a contact, put them on your do-not-contact list, or mark them not interested |
 | `update_campaign_targeting` | change job titles, locations, industries and companies a campaign finds |
 
+**Campaigns** (paid plans)
+
+| tool | what it does |
+|---|---|
+| `validate_message` | check a connection note or follow-up against ZenMode's message rules before it is saved; changes nothing |
+| `create_campaign` | create a connect campaign with a name, targeting and daily limit; always created paused |
+| `set_campaign_messages` | write a campaign's connection note and up to three follow-ups; the server checks each one again |
+| `launch_campaign` | start a paused campaign in two calls: a preflight that changes nothing and returns a summary and a confirm token, then the same tool with that token after you say yes |
+| `resume_campaign` | the same preflight for a paused campaign; it starts nothing |
+| `pause_campaign` | pause a running campaign |
+| `set_up_desktop_app` | what state the desktop app is in for your account and how to open, update or install it; changes nothing |
+
 ## What it cannot do
 
-There is no tool that sends a LinkedIn message or a connection request. Adding people to a campaign puts them
+There is no tool that sends a LinkedIn message or a connection request. A campaign starts only through
+launch_campaign's two calls, after you confirm. Adding people to a campaign puts them
 in that campaign's worklist. ZenMode's desktop app then works through the list later, inside the account's
 daily and weekly limits and business hours, and only while the desktop app is running.
 
